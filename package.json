@@ -1,0 +1,77 @@
+{
+  "name": "nestjs-binance-user",
+  "version": "0.1.0",
+  "description": "A NestJS module for the Binance user API, focused on querying Binance Pay transactions and verifying received payments by transaction ID.",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcuth/nestjs-binance-user.git"
+  },
+  "homepage": "https://github.com/marcuth/nestjs-binance-user#readme",
+  "bugs": {
+    "url": "https://github.com/marcuth/nestjs-binance-user/issues"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*",
+    "!/**/__tests__"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx ./src/index.ts",
+    "format": "prettier --write \"src/**/*.ts\" \"__tests__/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"__tests__/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\" \"__tests__/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" \"__tests__/**/*.ts\" --fix",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:cov": "vitest run --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "nestjs",
+    "nest",
+    "binance",
+    "binance-pay",
+    "payments",
+    "crypto",
+    "module",
+    "marcuth"
+  ],
+  "author": "Marcuth",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0 || ^11.0.0 || ^12.0.0",
+    "reflect-metadata": "^0.1.13 || ^0.2.0",
+    "rxjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
+    "@nestjs/common": "^12.4.0",
+    "@nestjs/core": "^12.4.0",
+    "@nestjs/testing": "^12.4.0",
+    "@types/node": "^26.6.6",
+    "@vitest/coverage-v8": "^5.1.0",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "globals": "^17.14.0",
+    "prettier": "^3.9.10",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.1.0"
+  }
+}

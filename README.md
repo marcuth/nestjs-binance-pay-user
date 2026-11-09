@@ -1,7 +1,7 @@
-# nestjs-binance-user
+# nestjs-binance-pay-user
 
-[![npm](https://img.shields.io/npm/v/nestjs-binance-user)](https://www.npmjs.com/package/nestjs-binance-user)
-[![license](https://img.shields.io/npm/l/nestjs-binance-user)](./LICENSE)
+[![npm](https://img.shields.io/npm/v/nestjs-binance-pay-user)](https://www.npmjs.com/package/nestjs-binance-pay-user)
+[![license](https://img.shields.io/npm/l/nestjs-binance-pay-user)](./LICENSE)
 
 A [NestJS](https://nestjs.com) module for the Binance user API, focused on querying **Binance Pay** transactions and
 **verifying received payments by transaction ID**. It has no runtime dependencies (it uses the global `fetch`).
@@ -13,7 +13,7 @@ A [NestJS](https://nestjs.com) module for the Binance user API, focused on query
 ## Installation
 
 ```bash
-npm install nestjs-binance-user @nestjs/common reflect-metadata rxjs
+npm install nestjs-binance-pay-user @nestjs/common reflect-metadata rxjs
 ```
 
 Requires Node.js >= 18 and NestJS 10, 11 or 12. Create an API key with **Enable Reading** only.
@@ -22,7 +22,7 @@ Requires Node.js >= 18 and NestJS 10, 11 or 12. Create an API key with **Enable 
 
 ```ts
 import { Module } from "@nestjs/common"
-import { BinanceUserModule } from "nestjs-binance-user"
+import { BinanceUserModule } from "nestjs-binance-pay-user"
 
 @Module({
     imports: [
@@ -64,7 +64,7 @@ The module is global.
 
 ```ts
 import { Injectable } from "@nestjs/common"
-import { BinancePayService } from "nestjs-binance-user"
+import { BinancePayService } from "nestjs-binance-pay-user"
 
 @Injectable()
 export class CheckoutService {

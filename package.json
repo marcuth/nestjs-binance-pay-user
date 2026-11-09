@@ -1,15 +1,15 @@
 {
-  "name": "nestjs-binance-user",
+  "name": "nestjs-binance-pay-user",
   "version": "0.1.0",
   "description": "A NestJS module for the Binance user API, focused on querying Binance Pay transactions and verifying received payments by transaction ID.",
   "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcuth/nestjs-binance-user.git"
+    "url": "https://github.com/marcuth/nestjs-binance-pay-user.git"
   },
-  "homepage": "https://github.com/marcuth/nestjs-binance-user#readme",
+  "homepage": "https://github.com/marcuth/nestjs-binance-pay-user#readme",
   "bugs": {
-    "url": "https://github.com/marcuth/nestjs-binance-user/issues"
+    "url": "https://github.com/marcuth/nestjs-binance-pay-user/issues"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",

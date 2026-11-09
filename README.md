@@ -13,7 +13,7 @@ A [NestJS](https://nestjs.com) module for the Binance user API, focused on query
 ## Installation
 
 ```bash
-npm install nestjs-binance-pay-user @nestjs/common reflect-metadata rxjs
+npm install nestjs-binance-pay-user
 ```
 
 Requires Node.js >= 18 and NestJS 10, 11 or 12. Create an API key with **Enable Reading** only.
